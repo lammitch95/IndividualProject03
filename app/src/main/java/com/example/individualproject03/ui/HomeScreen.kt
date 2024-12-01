@@ -28,6 +28,20 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 
+/**
+ * Composable function for the Home Screen.
+ *
+ * - Displays a personalized welcome message based on the logged-in user's first name.
+ * - Allows the user to select and navigate to game modes ("Easy" or "Hard").
+ * - Shows progress tracking for each game mode.
+ *
+ * - Uses `NavHostController` to navigate to the game screen upon selecting a game mode.
+ *
+ * - Personalized greeting.
+ * - Interactive game mode selection.
+ * - Progress indication for completed levels.
+ */
+
 @Composable
 fun HomeScreen(navHostController: NavHostController, homeScreenViewModel: HomeScreenViewModel = viewModel()){
 

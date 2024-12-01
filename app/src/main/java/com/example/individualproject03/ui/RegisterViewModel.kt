@@ -12,6 +12,19 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+/**
+ * ViewModel for managing the Registration Screen state and logic.
+ *
+ * Handles user input, validation, and database interaction for user registration:
+ * - Manages mutable states for user input fields and UI states (loading, errors, password visibility).
+ * - Validates input fields using `ValidationUtils`.
+ * - Registers users by checking for existing emails and saving new users in the database.
+ * - Updates UI states and triggers success or error callbacks.
+ *
+ * Includes a factory method for creating an instance with `AppDatabase`.
+ */
+
+
 class RegistrationScreenViewModel(private val appDatabase: AppDatabase): ViewModel(){
 
     companion object {

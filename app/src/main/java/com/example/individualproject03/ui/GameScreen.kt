@@ -64,6 +64,25 @@ import com.example.individualproject03.R
 import com.example.individualproject03.data.database.AppDatabase
 import kotlinx.coroutines.delay
 
+/**
+ * GameScreen.kt
+ *
+ * This composable function represents the main game screen for the app, which includes
+ * the game board, directional controls, and a play button. The screen allows users
+ * to play the game by interacting with a path represented on a grid. The player
+ * progresses by moving a smiley icon across the grid according to a predefined path.
+ *
+ * The game involves a series of tiles that the player must follow in the correct
+ * sequence of directions (up, down, left, right). The movement of the icon is animated
+ * based on the path, and the game checks for correct or incorrect directions,
+ * updating the player with the appropriate feedback.
+ *
+ * The GameScreen composable also contains UI elements like a progress indicator,
+ * animated feedback, and direction controls that are draggable and dropable.
+ *
+ */
+
+
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun GameScreen(navHostController: NavHostController){

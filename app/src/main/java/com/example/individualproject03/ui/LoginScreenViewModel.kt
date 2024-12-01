@@ -12,6 +12,19 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+/**
+ * ViewModel for managing the Login Screen state and logic.
+ *
+ * Handles user input, validation, and authentication:
+ * - Manages mutable states for email, password, error messages, and password visibility.
+ * - Validates user input using `ValidationUtils`.
+ * - Authenticates users by verifying credentials with the database.
+ * - Updates UI states and triggers success or error callbacks.
+ *
+ * Includes a factory method for creating an instance with `AppDatabase`.
+ */
+
+
 class LoginScreenViewModel(private val appDatabase: AppDatabase): ViewModel() {
 
     companion object {

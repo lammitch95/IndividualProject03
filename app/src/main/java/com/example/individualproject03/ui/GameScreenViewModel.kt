@@ -14,6 +14,34 @@ import com.example.individualproject03.utils.LoggedUser
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+/**
+ * ViewModel for the Game Screen.
+ *
+ * - Manages the state and logic for the game screen.
+ * - Tracks the user's progress and interactions within a specific game mode (Easy or Hard).
+ * - Loads and updates level data, including the grid structure and start/end tiles.
+ * - Handles user input for updating direction sequences in the grid.
+ * - Synchronizes user progress with the database.
+ *
+ * - **Dynamic Grid Management**: Configurable grid dimensions for level layout.
+ * - **Direction Sequence Tracking**: Tracks arrows and user-defined directions in the grid.
+ * - **Level Progression**: Dynamically loads levels based on user progress and mode.
+ * - **Database Synchronization**: Updates user progress in the database.
+ *
+ * - Loads user details to determine the current mode and progress.
+ * - Fetches the level map and sets the start and end tiles.
+ *
+ * - `setSelectedArrowIndex`: Updates the index of the selected arrow.
+ * - `setDroppedBoxIndex`: Updates the index where the box is dropped.
+ * - `updateDirection`: Updates the direction sequence based on user interaction.
+ * - `updateModeProgress`: Updates progress and synchronizes it with the database.
+ * - `resetLevel`: Placeholder for resetting the current level.
+ *
+ * - **AppDatabase**: Provides DAO for updating user progress.
+ * - **LevelRepository**: Fetches level data for the specified mode and progress.
+ * - **LoggedUser**: Tracks the logged-in user's details and progress.
+ */
+
 
 data class Tile(
     val gridX: Int,

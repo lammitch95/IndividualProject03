@@ -8,6 +8,12 @@ import com.example.individualproject03.model.User
 import com.example.individualproject03.utils.GameStats
 import com.example.individualproject03.utils.LoggedUser
 
+/**
+ * ViewModel for the Home Screen.
+ * - Manages user-specific data such as first name and game progress.
+ * - Loads logged-in user details to display on the Home Screen.
+ * - Allows the selection of a game mode (easy/hard) via `GameStats`.
+**/
 class HomeScreenViewModel(): ViewModel(){
 
     var userFirstName = mutableStateOf("Guest")

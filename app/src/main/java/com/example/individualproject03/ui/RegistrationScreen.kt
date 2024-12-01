@@ -44,6 +44,16 @@ import com.example.individualproject03.R
 import com.example.individualproject03.data.database.AppDatabase
 import kotlinx.coroutines.launch
 
+/**
+ * This file defines the UI for a registration screen in a Compose-based Android application.
+ *
+ * - Input fields for user registration: First Name, Last Name, Email, and Password.
+ * - Validation logic to provide feedback on user input.
+ * - A submit button for form submission, with a loading indicator.
+ * - Navigation to the login screen upon successful registration.
+ * - Display of error messages when validation or registration fails.
+ */
+
 @Composable
 fun RegistrationScreen(navHostController: NavHostController){
 

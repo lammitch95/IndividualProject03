@@ -40,6 +40,17 @@ import androidx.navigation.compose.rememberNavController
 import com.example.individualproject03.R
 import com.example.individualproject03.data.database.AppDatabase
 
+/**
+ * Composable function for the Login Screen UI.
+ ** - Provides a user-friendly login interface with email and password fields.
+ * - Integrates `LoginScreenViewModel` for managing user input and authentication.
+ * - Includes validation feedback and error display.
+ * - Allows navigation to registration and home screens.
+ * - Styled with a vertical gradient background and modern UI elements.
+ *
+ * Preview function `PreviewLoginScreen` demonstrates the screen layout.
+ */
+
 
 @Composable
 fun LoginScreen(navHostController: NavHostController){
